@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="bank.css" />
+  </head>
+  <body class="bg-slate-700">
+    <main class="container mx-auto mt-10">
+      <header>
+        <h1 class="rounded p-5 text-center text-white text-3xl bg-slate-600">
+          Let's have some money!!!
+        </h1>
+      </header>
+      <section>
+        <div class="flex flex-row justify-between text-white text-2xl">
+          <div class="rounded bg-slate-600 p-12 w-full mt-10">
+            <h1>Last Deposite</h1>
+            <h1>$<span id="deposite">400</span></h1>
+          </div>
+          <div class="rounded bg-slate-600 p-12 w-full mt-10 mx-10">
+            <h1>Last Withdrow</h1>
+            <h1>$<span id="withDrow">400</span></h1>
+          </div>
+          <div class="rounded bg-slate-600 p-12 w-full mt-10">
+            <h1>Current Balance</h1>
+            <h1>$<span id="balance">400</span></h1>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="flex flex-row justify-between text-white text-2xl">
+          <div class="p-12 bg-slate-600 mt-10 w-full mr-2">
+            <h1>Deposite Amount</h1>
+            <input
+              class="text-black"
+              type="number"
+              name="depositeAmount"
+              id="inpDeposit"
+            />
+            <input
+              class="bg-slate-700 p-1 rounded uppercase cursor-pointer active:bg-slate-500"
+              type="submit"
+              name="btnDeposit"
+              id="btnDeposit"
+              value="Deposit"
+            />
+          </div>
+          <div class="p-12 bg-slate-600 mt-10 w-full ml-2">
+            <h1>Withdrow Amount</h1>
+            <input
+              class="text-black"
+              type="number"
+              name="withdrowAmount"
+              id="inpwithdrow"
+            />
+            <input
+              class="bg-slate-700 p-1 rounded uppercase cursor-pointer active:bg-slate-500"
+              type="submit"
+              name="btnDeposit"
+              id="btnDeposit"
+              value="Withdrow"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
